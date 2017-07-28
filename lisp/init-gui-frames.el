@@ -62,9 +62,10 @@
 
 
 (setq frame-title-format
-      '((:eval (if (buffer-file-name)
+      (list "Devil's Emacs    "
+            ""'((:eval (if (buffer-file-name)
                    (abbreviate-file-name (buffer-file-name))
-                 "%b"))))
+                 "%b")))))
 
 ;; Non-zero values for `line-spacing' can mess up ansi-term and co,
 ;; so we zero it explicitly in those cases.
