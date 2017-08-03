@@ -1,11 +1,11 @@
 ;;; Character sets
 ;; English Font
 (set-face-attribute
- 'default nil :font "Consolas 12")
+ 'default nil :font "Consolas 11")
 ;; Chinese Font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
-                    charset (font-spec :family "Microsoft Yahei" :size 14)))
+                    charset (font-spec :family "Microsoft Yahei" :size 16)))
 
 ;;; Changing font sizes
 

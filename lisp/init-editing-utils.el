@@ -20,6 +20,7 @@
  ediff-split-window-function 'split-window-horizontally
  ediff-window-setup-function 'ediff-setup-windows-plain
  indent-tabs-mode nil
+ tab-width 4
  make-backup-files nil
  mouse-yank-at-point t
  save-interprogram-paste-before-kill t
@@ -28,6 +29,10 @@
  tooltip-delay 1.5
  truncate-lines nil
  truncate-partial-width-windows nil)
+
+(global-hl-line-mode 1)
+(set-face-underline 'highlight t)
+(global-linum-mode t)
 
 (global-auto-revert-mode)
 (setq global-auto-revert-non-file-buffers t
