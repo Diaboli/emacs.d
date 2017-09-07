@@ -7,6 +7,13 @@
   (set-fontset-font (frame-parameter nil 'font)
                     charset (font-spec :family "Microsoft Yahei" :size 16)))
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-table ((t (:foreground "#6c71c4" :family "Ubuntu Mono")))))
+
 ;;; Changing font sizes
 
 (require-package 'default-text-scale)
